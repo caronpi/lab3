@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    background-color: azure;
+    margin: 0;
+}
+
+.header{
+    padding: 10px;
+    text-align: center;
+    background: white;
+    color: #800080;
+}
+
+.header>h1{
+    font-size: 40px;
+}
+
+.header>p{
+    font-size: 20px;
+}
+
+.menu{
+    display: flex;
+    background-color: #8470FF;
+}
+
+.menu>a{
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.menu>a:hover{
+    background-color: #BCE2C9;
+    color: white
+}
+
+.noidung{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box{
+    width: 24%;
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.imganh{
+    width: 40%;
+    flex-shrink: 0;
+    height: 25%;
+}
+
+p{
+    font-weight: 500;
+    word-break: break-all;
+    text-align: justify;
+    flex: 1;
+    padding: 10px;
+}
+
+.tt{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    height: 30%;
+    padding: 10px;
+}
+
+.imgicon{ 
+    width: 10%;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+
+.tin{
+    padding: 10px;
+}
+
+.tt2{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    border: 1px solid gray;
+    padding: 10px 10px;
+}
+
+button{
+    background-color: #F66092;
+    color: white;
+    border-radius: 15px;
+    padding: 5px 25px;
+    flex-shrink: 0;
+}
+
+
+.footer{
+    text-align: center;
+    background-color: #8470FF;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 600px){
+    noidung,
+    .menu{
+        flex-direction: column;
+    }
+    .box{
+        width: 100%;
+    }
+}

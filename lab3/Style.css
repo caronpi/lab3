@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    background-color: white;
+
+}
+.header{
+    padding: 10px;  
+    text-align: center;
+    background-color: aliceblue;
+    color: rgb(143, 46, 235); 
+}
+.header>h1{
+    font-size: 40px;
+}
+.header>p{
+    font-size: 20px;
+}
+.menu{
+   display: flex; 
+   background-color: rgb(232, 54, 232);
+}
+.menu>a{
+    color: whitesmoke;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+.menu>a:hover{
+    background-color: aquamarine;
+    color: mediumpurple;
+}
+.noidung{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer{
+    text-align: center;
+    background-color: turquoise;
+    padding: 15px;
+    margin-top: 10px;
+}
+.tin{
+    padding: 10px;
+}
+.tt2{
+    display: flex;
+    margin: 0px;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.tt1{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 25%;
+}
+.imganh{
+    width: 40%;
+    flex-shrink: 0;
+    height: 25%;
+}
+.imgicon{
+    border-radius: 50%;
+    border: 1px solid gray;
+    width: 30%;
+}
+.box{
+    border: 1px gray none;
+}
+.box>img{
+    width: 100%;
+}
+@media screen and ( max-width :600px) {
+    .noidung,
+    .menu{
+       flex-direction: column; 
+    }
+    .box{
+        width: 100%;
+    }
+    
+}
